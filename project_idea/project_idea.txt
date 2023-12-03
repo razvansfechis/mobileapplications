@@ -1,0 +1,49 @@
+Project Idea
+
+Bussiness Management - Mobile Application
+
+1) Short Description:
+
+You happend to won the lottery, but you don't want your money to go to waste so in your small town you open all sorts of businesses.
+
+Businesses are a great way to make money so you open more and more as time goes by.
+
+By doing a quick google search you've found that restaurants, car services, transport, sweets and coffee bussiness are the most demanted 
+so you open a business for each, for now 
+
+Now you need to manage those so here's an app for you which does exactly that, it shows you how much money you made from each bussiness,
+ it allows you to buy more bussiness or get rid of those who don't make profit and much more.
+
+2) Domain Details:
+
+name: stores the name of your business ; is unique
+type: stores the type of your business (eg. Restaurant / Car Wash etc.)
+monthly_revenue: stores the cash flow that you've earned from your business
+no_employees: stores the number of employees that work for your business
+monthly_customers: stores the number of customers that visit your business
+
+3) Application Usage
+
+Whenever you open a new bussiness you will want to add it to the "Bussiness Management" application, so you will press a button which redirects you to a separate page where you add your bussiness, 
+its type and all of its necessary information like number of employees, number of customers and the cash that it produced this month.
+
+Also you want to see all of your bussiness and the cash they generated so you will have an option for that
+
+If you changed the name of your bussiness or the number of employees or maybe you got wrong the money that it produced this month or something else, you can always update it
+
+Maybe you got rid of a business because it doesn't do as good on the market as it used to or its not made for you, you can always get rid of it so you have an 
+option to delete it
+
+4) Storage
+
+I believe that the information about a specific business are very important to be persistent so the updating and deleting a bussiness details
+will be persistent on the local database and on the server aswell as adding a business. Therefore:
+- when the user is online, the data about the business entities is taken from the server
+- when the user is offline, the data about the business entitites is taken from the local database
+
+5)  Device is offline
+
+When the device is offline, the delete and update operation on a business enitites are perfomed locally so they will persist only in the local database.
+When the device is online, all the changes on the local database are transmitted to the server.
+
+
